@@ -2,21 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    padding: 0;
-    background-color: #141313; /* Set the background color to black */
+    background-color: #141313; /* Set the background color to a specific color using hex code */
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    position: absolute; /* Position the container absolutely */
+    top: 50%; /* Position the container vertically at the middle of the viewport */
+    left: 50%; /* Position the container horizontally at the middle of the viewport */
+    transform: translate(-50%, -50%); /* Center the container both horizontally and vertically */
+    display: inline-block; /* Ensure the container wraps its contents */
 }
 
 img {
-    max-width: 100%;
+    max-width: 100%; /* Ensure the image scales relative to its container */
     height: auto;
-    width: 40%;
+}
+
+.coming-soon {
+    position: absolute; /* Position the text absolutely */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 50%; /* Position the text at the horizontal center of the container */
+    transform: translateX(-50%); /* Center the text horizontally */
+    color: white;
+    font-size: 2em; /* Initial font size */
 }
 
 .text {
@@ -24,12 +32,9 @@ img {
     padding: 20px;
 }
 
-.coming-soon {
-    position: absolute;
-    bottom: -60px;
-    left: 8px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 68px; /* Adjust the font size as needed */
+/* Media query for smaller screen sizes */
+@media (max-width: 768px) {
+    .text {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
 }
