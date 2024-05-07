@@ -25,6 +25,7 @@ img {
     transform: translateX(-50%); /* Center the text horizontally */
     color: white;
     font-size: 2em; /* Initial font size */
+    max-width: 80%; /* Set a maximum width to prevent text from becoming too wide */
 }
 
 
