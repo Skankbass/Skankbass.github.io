@@ -26,8 +26,8 @@ img {
 
 .coming-soon {
     position: absolute;
-    bottom: 20px;
-    left: 0px;
+    bottom: -60px;
+    left: 8px;
     width: 100%;
     text-align: center;
     color: white;
