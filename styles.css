@@ -27,10 +27,6 @@ img {
     font-size: 2em; /* Initial font size */
 }
 
-.text {
-    text-align: center;
-    padding: 20px;
-}
 
 /* Media query for smaller screen sizes */
 @media (max-width: 768px) {
